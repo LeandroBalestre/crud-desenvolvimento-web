@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= base_url('assets/css/menu.css') ?>">
-    <title>Sistema ERP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Sistema Mamba</title>
 </head>
 
 <body>
@@ -13,7 +14,7 @@
     <div class="topo">
 
         <div class="logo">
-            MAMBA SOLUÇÕES
+            Mamba Gestão
         </div>
 
         <div class="usuario">
@@ -37,7 +38,9 @@
             <div class="card" 
             onclick="window.location.href='<?= site_url('Cliente/consulta') ?>'">
 
-                <div class="icone">👤</div>
+                <div class="icone">
+                    <i class="fa-regular fa-user"></i>
+                </div>
 
                 <div class="tituloCard">
                     Clientes
@@ -52,7 +55,9 @@
             <div class="card"
             onclick="window.location.href='<?= site_url('Vendas/consulta') ?>'">
 
-                <div class="icone">🛒</div>
+                <div class="icone">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
 
                 <div class="tituloCard">
                     Vendas
