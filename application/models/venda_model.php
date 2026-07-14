@@ -7,8 +7,15 @@ class Venda_model extends CI_Model
     public function listar()
     {
         return $this->db
-                    ->order_by('NR_VENDA')
-                    ->get('VENDAS')
+                    ->select('VENDAS.*, CLIENTE.NOME_FANTASIA')
+                    ->from('VENDAS')
+                    ->join(
+                        'CLIENTE',
+                        'CLIENTE.CD_CLIENTE = VENDAS.CD_CLIENTE',
+                        'left'
+                    )
+                    ->order_by('VENDAS.NR_VENDA')
+                    ->get()
                     ->result();
     }
 

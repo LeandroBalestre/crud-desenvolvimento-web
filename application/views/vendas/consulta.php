@@ -52,7 +52,7 @@
                 <tr>
                     <td class="dados_cliente" style="text-align:center"><?= $venda->NR_VENDA ?></td>
                     <td class="dados_cliente"><?= $venda->VALOR_VENDA ?></td>
-                    <td class="dados_cliente"><?= $venda->CD_CLIENTE ?></td>
+                    <td class="dados_cliente"><?= $venda->NOME_FANTASIA ?></td>
                     <td class="dados_cliente"><?= $venda->DT_VENDA ?></td>
 
                     <td>              
