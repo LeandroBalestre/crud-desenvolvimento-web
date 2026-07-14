@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Helvetica, Arial, sans-serif;
+}
+
+body{
+    background:#eef2f7;
+}
+
+.topo{
+    height:60px;
+    background:#595a59;
+    color:white;
+    display:flex;
+    align-items:center;
+    padding-left:25px;
+    font-size:24px;
+    font-weight:bold;
+    width: 100%;
+}
+
+.titulo{
+    background:#ffffff2d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width:1800px;
+    margin:30px auto;
+    display:flex;
+    gap:20px;
+}
+
+.acoes{
+    width:70px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.botao_nova_venda{
+    width:100px;
+    height:40px;
+    border:none;
+    border-radius:10px;
+    background:rgba(46, 67, 252, 0.945);
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+    cursor:pointer;
+    transition:.2s;
+    font-weight: bold;
+    color: white;
+}
+
+.botao_menu{
+    width: 40px;;
+    height: 40px;
+    border:none;
+    border-radius:10px;
+    background:rgba(46, 67, 252, 0.945);
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+    cursor:pointer;
+    transition:.2s;
+    font-weight: bold;
+    color: white;
+}
+
+.botao_editar_cliente{
+    background-color: #fcb621;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.botao_excluir_cliente{
+    background-color: #fd3131;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.botao:hover{
+    transform:scale(1.08);
+}
+
+.conteudo{
+    flex:1;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 5px 15px #afafaf;
+    padding:5px;
+}
+
+.titulo{
+    font-size:20px;
+    margin-bottom:20px;
+    color:#333333;
+}
+
+.titulo_consulta{
+    font-size:20px;
+    color:#000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;   
+    padding-left: 20px;  
+    padding-top: 5px;  
+    font-weight: bold;
+}
+
+.dados_cliente{
+    font-size:18px;
+    padding:15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#1f2937;
+    color:white;
+    padding:12px;
+    text-align:left;
+}
+
+td{
+    padding:5px;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f4f7fb;
+}
+
+.painel{ 
+    width:0; 
+    height:100vh;
+    overflow:hidden; 
+    background:white; 
+    transition:.30s; 
+    box-shadow:-3px 0 12px rgba(0,0,0,.12); 
+    top:0;
+    right:0;
+    z-index:1000;
+} 
+
+.painel.ativo{ 
+    width:420px; 
+} 
+
+.painelConteudo{ 
+    padding:25px; 
+} 
+
+.painel h2{ 
+    margin-bottom:25px; 
+    color:#333; 
+} 
+
+.grupo{ 
+    display:flex; 
+    flex-direction:column; 
+    margin-bottom:15px; 
+} 
+
+.grupo label{ 
+    margin-bottom:5px; 
+    font-weight:bold; 
+} 
+
+.grupo input{ 
+    height:38px; 
+    border:1px solid #ccc; 
+    border-radius:5px; 
+    padding:8px; 
+} 
+
+.botoesPainel{    
+    margin-top:25px; 
+} 
+    
+.botoesPainel button{ 
+    border:none; 
+    padding:10px 20px; 
+    color:white; 
+    border-radius:6px; 
+    cursor:pointer; 
+    margin-right:10px; 
+}
+    
+.salvar{ 
+    background:#198754; 
+}
+
+.cancelar{ 
+    background:#6c757d; 
+}
