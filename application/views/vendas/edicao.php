@@ -8,15 +8,6 @@
 
                 <input type="hidden" id="EdtNR_VENDA" name="NR_VENDA">
 
-                <div class="grupo">
-                    <label>Valor Total</label>
-                    <input type="text" 
-                           id="EdtEditarVALOR_VENDA" 
-                           name="VALOR_VENDA"
-                           class="obrigatorio_edicao_venda"
-                           data-nome="o Valor Total">
-                </div>
-
                 <div class="grupo"> 
                     <label>Cliente</label>
                     <select id="EdtEditarCD_CLIENTE" name="CD_CLIENTE">
@@ -28,6 +19,15 @@
 
                         <?php endforeach; ?>
                     </select>
+                </div>
+
+                <div class="grupo">
+                    <label>Valor Total</label>
+                    <input type="text" 
+                           id="EdtEditarVALOR_VENDA" 
+                           name="VALOR_VENDA"
+                           class="obrigatorio_edicao_venda"
+                           data-nome="o Valor Total">
                 </div>
 
                 <div class="botoesPainel">
