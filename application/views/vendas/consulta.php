@@ -51,7 +51,9 @@
 
                 <tr>
                     <td class="dados_cliente" style="text-align:center"><?= $venda->NR_VENDA ?></td>
-                    <td class="dados_cliente"><?= $venda->VALOR_VENDA ?></td>
+                    <td class="dados_cliente">
+                        R$ <?= number_format($venda->VALOR_VENDA, 2, ',', '.') ?>
+                    </td>
                     <td class="dados_cliente"><?= $venda->NOME_FANTASIA ?></td>
                     <td class="dados_cliente"><?= $venda->DT_VENDA ?></td>
 
