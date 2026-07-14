@@ -5,8 +5,9 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="<?= base_url('assets/css/consulta-cliente.css') ?>">
+<link rel="stylesheet" href="<?= base_url('assets/css/cliente.css') ?>">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="icon" href="<?= base_url('assets/images/favicon.png') ?>">
 
 <title>Consulta de Clientes</title>
 
@@ -15,26 +16,36 @@
 <body>
 
 <div class="topo">
-    Crud Desenvolvimento Web
+    Clientes
 </div>
 
-<div class="container">
+    <div class="container">
 
-    <div class="conteudo">
+        <div class="conteudo">
 
-        <div class="titulo_consulta" style="border-bottom: 1px solid lightgray;">
-            Consulta de Clientes
-            <button class="botao_nova_venda" title="Novo Cliente" style="margin-left: 1380px;" onclick="abrirPainelCadastro()">
-            Novo Cliente
+            <div class="titulo_consulta">
+
+        <span>Consulta de Clientes</span>
+
+        <div class="acoes_titulo">
+
+            <button 
+                class="botao_nova_venda" 
+                title="Novo Cliente" 
+                onclick="abrirPainelCadastro()">
+                Novo Cliente
             </button>
 
             <button
-            class="botao_menu"
-            title="Retornar ao Menu"
-            onclick="window.location.href='<?= site_url('Menu/index') ?>'">
+                class="botao_menu"
+                title="Retornar ao Menu"
+                onclick="window.location.href='<?= site_url('Menu/index') ?>'">
                 <i class="fa-solid fa-house"></i>
             </button>
+
         </div>
+
+    </div>
 
         <table>
 
@@ -57,7 +68,7 @@
                     <td class="dados_cliente"><?= $cliente->CNPJ ?></td>
                     <td class="dados_cliente"><?= $cliente->ENDERECO ?></td>
                     <td class="dados_cliente"><?= $cliente->TELEFONE ?></td>
-                    <td class="dados_cliente"><?= $cliente->VALOR_FATURAMENTO ?></td>
+                    <td class="dados_cliente"> R$ <?= number_format($cliente->VALOR_FATURAMENTO, 2, ',', '.') ?></td>
 
                     <td>              
                         <a class="botao_editar_cliente"

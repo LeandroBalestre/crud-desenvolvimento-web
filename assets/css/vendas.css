@@ -5,13 +5,18 @@
     font-family:Helvetica, Arial, sans-serif;
 }
 
+select {
+    height: 38px;   
+    border-radius: 5px;
+}
+
 body{
-    background:hwb(0 100% 0%);
+    background:#eef2f7;
 }
 
 .topo{
-    height:60px;
-    background:#595a59;
+    height:80px;
+    background:#659ff7;
     color:white;
     display:flex;
     align-items:center;
@@ -42,7 +47,7 @@ body{
 
 .botao_nova_venda{
     width:100px;
-    height:40px;
+    height:50px;
     border:none;
     border-radius:10px;
     background:rgba(46, 67, 252, 0.945);
@@ -51,11 +56,20 @@ body{
     transition:.2s;
     font-weight: bold;
     color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.acoes_titulo
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .botao_menu{
-    width: 40px;;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border:none;
     border-radius:10px;
     background:rgba(46, 67, 252, 0.945);
@@ -75,6 +89,7 @@ body{
     border-radius: 8px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .botao_excluir_cliente{
@@ -86,6 +101,7 @@ body{
     border-radius: 8px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .botao:hover{
@@ -106,14 +122,15 @@ body{
     color:#333333;
 }
 
-.titulo_consulta{
-    font-size:20px;
-    color:#000000;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-bottom: 10px;   
-    padding-left: 20px;  
-    padding-top: 5px;  
-    font-weight: bold;
+.titulo_consulta
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    font-size: 30px;
+    padding-left: 20px;
 }
 
 .dados_cliente{
@@ -123,7 +140,7 @@ body{
 }
 
 table{
-    width:100%;
+    width: 100%;
     border-collapse:collapse;
 }
 
@@ -141,6 +158,10 @@ td{
 
 tr:hover{
     background:#f4f7fb;
+}
+
+tr:nth-child(even) {
+    background-color: #dbe3f3;
 }
 
 .painel{ 
@@ -205,4 +226,14 @@ tr:hover{
 
 .cancelar{ 
     background:#6c757d; 
+}
+
+td:last-child,
+td:nth-last-child(2),
+th:last-child,
+th:nth-last-child(2)
+{
+    width: 80px;
+    text-align: center;
+    padding: 5px;
 }

@@ -6,21 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= base_url('assets/css/menu.css') ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="<?= base_url('assets/images/favicon.png') ?>">
     <title>Sistema Mamba</title>
 </head>
 
 <body>
 
     <div class="topo">
-
         <div class="logo">
             Mamba Gestão
         </div>
-
-        <div class="usuario">
-            Usuário
-        </div>
-
     </div>
 
     <div class="conteudo">

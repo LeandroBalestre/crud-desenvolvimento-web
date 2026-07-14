@@ -10,14 +10,15 @@ body{
 }
 
 .topo{
-    height:70px;
-    background:#1f2937;
+    height:80px;
+    background:#659ff7;
     color:white;
     display:flex;
     align-items:center;
-    justify-content:space-between;
-    padding:0 30px;
-    box-shadow:0 2px 8px rgba(0,0,0,.15);
+    padding-left:25px;
+    font-size:24px;
+    font-weight:bold;
+    width: 100%;
 }
 
 .logo{
