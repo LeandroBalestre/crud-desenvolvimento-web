@@ -58,11 +58,11 @@
                 </th>
 
                 <th class="titulo">
-                    Valor Total
+                    Cliente 
                 </th>
 
                 <th class="titulo">
-                    Cliente
+                    Valor Total
                 </th>
 
                 <th class="titulo">
@@ -81,15 +81,15 @@
                 </td>
 
                 <td class="dados_cliente">
-                    R$ <?= number_format($venda->VALOR_VENDA, 2, ',', '.') ?>
-                </td>
-
-                <td class="dados_cliente">
                     <?= $venda->NOME_FANTASIA ?>
                 </td>
 
                 <td class="dados_cliente">
-                    <?= $venda->DT_VENDA ?>
+                    R$ <?= number_format($venda->VALOR_VENDA, 2, ',', '.') ?>
+                </td>
+
+                <td class="dados_cliente">
+                    <?= date('d/m/Y', strtotime($venda->DT_VENDA)) ?>
                 </td>
 
                 <td>
